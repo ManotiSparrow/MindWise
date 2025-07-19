@@ -28,31 +28,31 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: "Dr. Sarah Johnson",
+      name: "Dr. Sarah Kamau",
       role: "Clinical Director",
       specialty: "Anxiety and Depression",
-      image: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Dr. Johnson has over 15 years of experience in clinical psychology, specializing in anxiety and depression treatment."
+      image: "https://images.pexels.com/photos/7579307/pexels-photo-7579307.jpeg",
+      bio: "Dr. Sarah has over 15 years of experience in clinical psychology, specializing in anxiety and depression treatment."
     },
     {
-      name: "Dr. Michael Chen",
+      name: "Dr. Michael Mandela",
       role: "Trauma Specialist",
       specialty: "PTSD and Trauma Recovery",
-      image: "https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Dr. Chen is a licensed therapist with expertise in trauma-informed care and evidence-based treatments."
+      image: "https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg",
+      bio: "Dr. Mandela is a licensed therapist with expertise in trauma-informed care and evidence-based treatments."
     },
     {
-      name: "Dr. Emily Rodriguez",
+      name: "Dr. Emily Kenyatta",
       role: "Research Coordinator",
       specialty: "Mental Health Research",
-      image: "https://images.pexels.com/photos/5327590/pexels-photo-5327590.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Dr. Rodriguez leads our research initiatives and ensures our resources are based on the latest scientific evidence."
+      image: "https://images.pexels.com/photos/33055500/pexels-photo-33055500.jpeg",
+      bio: "Dr. Emily leads our research initiatives and ensures our resources are based on the latest scientific evidence."
     },
     {
-      name: "Lisa Thompson",
+      name: "Lisa Manoti",
       role: "Community Outreach Manager",
       specialty: "Peer Support and Education",
-      image: "https://images.pexels.com/photos/5327659/pexels-photo-5327659.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "https://images.pexels.com/photos/8124393/pexels-photo-8124393.jpeg",
       bio: "Lisa coordinates our community programs and helps connect individuals with appropriate mental health resources."
     }
   ];

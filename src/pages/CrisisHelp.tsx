@@ -25,6 +25,14 @@ const CrisisHelp = () => {
 
   const emergencyContacts = [
     {
+      name: "Befrienders Kenya",
+      number: "0722 178 177",
+      description: "Emotional support and suicide prevention",
+      availability: "24/7",
+      country: "Kenya",
+      type: "phone"
+    },
+    {
       name: "National Suicide Prevention Lifeline",
       number: "988",
       description: "Free, confidential support 24/7",
@@ -62,14 +70,6 @@ const CrisisHelp = () => {
       description: "24/7 support in English and French",
       availability: "24/7",
       country: "Canada",
-      type: "phone"
-    },
-    {
-      name: "Befrienders Kenya",
-      number: "0722 178 177",
-      description: "Emotional support and suicide prevention",
-      availability: "24/7",
-      country: "Kenya",
       type: "phone"
     },
     {

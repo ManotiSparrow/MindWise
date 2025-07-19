@@ -23,7 +23,8 @@ const Articles = () => {
       summary: "A comprehensive guide to help you prepare for and understand what happens during your first therapy appointment.",
       category: "therapy",
       readTime: "6 min read",
-      author: "Dr. Sarah Johnson",
+      author: "PsychCentral",
+      url:"https://psychcentral.com/lib/what-to-expect-in-your-first-counseling-session",
       image: "https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=800",
       content: "Starting therapy can feel overwhelming, but knowing what to expect can help ease your anxiety...",
       isInternal: true
@@ -34,7 +35,8 @@ const Articles = () => {
       summary: "Learn to recognize panic attack symptoms and discover evidence-based techniques to manage them effectively.",
       category: "anxiety",
       readTime: "8 min read",
-      author: "Dr. Michael Chen",
+      author: "HavardHealth",
+      url:"https://www.health.harvard.edu/mind-and-mood/panic-attacks-recognizing-and-managing-panic-attacks-and-preventing-future-attacks",
       image: "https://images.pexels.com/photos/3807629/pexels-photo-3807629.jpeg?auto=compress&cs=tinysrgb&w=800",
       content: "Panic attacks can be frightening experiences, but understanding them is the first step to managing them...",
       isInternal: true
@@ -45,8 +47,9 @@ const Articles = () => {
       summary: "Exploring the unique challenges men face in seeking mental health support and how to overcome barriers.",
       category: "depression",
       readTime: "7 min read",
-      author: "Dr. Alex Rodriguez",
-      image: "https://images.pexels.com/photos/1415276/pexels-photo-1415276.jpeg?auto=compress&cs=tinysrgb&w=800",
+      author: "Butler",
+      url: "https://www.butler.org/blog/breaking-the-stigma-of-mens-mental-health",
+      image: "https://images.pexels.com/photos/5710988/pexels-photo-5710988.jpeg",
       content: "Men often face unique challenges when it comes to mental health, including societal expectations...",
       isInternal: true
     },
@@ -56,18 +59,20 @@ const Articles = () => {
       summary: "Practical strategies and daily habits to build psychological resilience and improve mental well-being.",
       category: "self-care",
       readTime: "5 min read",
-      author: "Dr. Emily Thompson",
+      author: "APA",
+      url:"https://www.apa.org/topics/resilience/building-your-resilience",
       image: "https://images.pexels.com/photos/2416472/pexels-photo-2416472.jpeg?auto=compress&cs=tinysrgb&w=800",
       content: "Resilience is not something you're born with – it's a skill that can be developed...",
       isInternal: true
     },
     {
       id: 5,
-      title: "The Science of Mindfulness and Mental Health",
+      title: "The Science of Mindfulness",
       summary: "Discover how mindfulness practices can transform your mental health based on latest research findings.",
       category: "self-care",
       readTime: "9 min read",
-      author: "Dr. Lisa Wang",
+      author: "Mindful",
+      url:"https://www.mindful.org/the-science-of-mindfulness/",
       image: "https://images.pexels.com/photos/1472887/pexels-photo-1472887.jpeg?auto=compress&cs=tinysrgb&w=800",
       content: "Mindfulness has been shown to have profound effects on mental health and well-being...",
       isInternal: true
@@ -78,7 +83,8 @@ const Articles = () => {
       summary: "Learn how to establish and maintain healthy boundaries to protect your mental health in relationships.",
       category: "relationships",
       readTime: "6 min read",
-      author: "Dr. Maria Garcia",
+      author: "HelpGuide",
+      url:"https://www.helpguide.org/relationships/social-connection/setting-healthy-boundaries-in-relationships",
       image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
       content: "Healthy boundaries are essential for maintaining your mental health and well-being...",
       isInternal: true
@@ -89,18 +95,20 @@ const Articles = () => {
       summary: "Understanding SAD and practical strategies to manage seasonal depression symptoms.",
       category: "depression",
       readTime: "7 min read",
-      author: "Dr. Jennifer Lee",
+      author: "EverydayHealth",
+      ur:"https://www.everydayhealth.com/depression/treatment/ways-to-ease-seasonal-depression/",
       image: "https://images.pexels.com/photos/3768894/pexels-photo-3768894.jpeg?auto=compress&cs=tinysrgb&w=800",
       content: "Seasonal Affective Disorder affects millions of people during darker months...",
       isInternal: true
     },
     {
       id: 8,
-      title: "Managing Work-Related Stress and Burnout",
+      title: "Managing Work-Related Stress",
       summary: "Identify signs of workplace burnout and learn effective strategies for managing professional stress.",
       category: "stress",
       readTime: "8 min read",
-      author: "Dr. Robert Kim",
+      author: "APA",
+      url:"https://www.apa.org/topics/healthy-workplaces/work-stress",
       image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800",
       content: "Work-related stress has become increasingly common in today's fast-paced world...",
       isInternal: true
@@ -428,10 +436,15 @@ const Articles = () => {
                 </div>
                 
                 {article.isInternal ? (
-                  <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center">
-                    Read Article
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </button>
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center"
+                  >
+                    Read on {article.source}
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
                 ) : (
                   <a
                     href={article.url}

@@ -7,6 +7,13 @@ const Home = () => {
   const [currentAffirmation, setCurrentAffirmation] = useState(0);
   
   const affirmations = [
+    "I am worthy of love just for being who I am",
+    "I will allow myself to rest when my body needs it",
+    "It is okay to take things one step at a time",
+    "I deserve fulfilling relationships",
+    "My self-worth is not determined by my accomplishments",
+    "I am resilient and can overcome life’s challenges",
+    "I promise myself love, patience, and kindness for this week",
     "You are not alone in your journey.",
     "Today is a new chance to heal.",
     "Your mental health matters.",
