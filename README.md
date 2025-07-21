@@ -26,7 +26,8 @@ Mental health is often neglected due to stigma, inaccessibility, or lack of real
 
 Coming soon: Add GIFs or screenshots of the chatbot, mood tracker UI, and journal entry view
 
-Live demo: 🌐 https://mindwise.netlify.app
+Live demo: 🌐 Demo: 🔗 https://meek-sopapillas-653fbe.netlify.app/
+
 
 🛠️ Tech Stack
 
