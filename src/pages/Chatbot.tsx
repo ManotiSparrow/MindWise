@@ -413,23 +413,25 @@ const Chatbot = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-screen pt-8 pb-16 px-4 sm:px-6 lg:px-8"
+      className="min-h-screen bg-gradient-hero flex flex-col items-center justify-start py-12 px-2 md:px-0"
     >
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-3xl w-full mx-auto">
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="text-center mb-8"
+          className="flex flex-col items-center mb-8"
         >
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="bg-gradient-to-br from-blue-400 to-purple-400 p-4 rounded-full shadow-lg mb-2">
+            <Bot className="w-10 h-10 text-white" />
+          </div>
+          <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-2 tracking-tight text-center drop-shadow-soft">
             Mental Health Support Chat
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300">
+          <p className="text-lg text-muted-foreground text-center max-w-xl">
             Get instant support and answers to your mental health questions
           </p>
         </motion.div>
-
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg h-[600px] flex flex-col">
+        <div className="bg-white/90 dark:bg-gray-900/80 rounded-3xl shadow-card p-0 mb-8 border border-border backdrop-blur-md flex flex-col h-[600px]">
           {/* Chat Messages */}
           <div className="flex-1 overflow-y-auto p-6 space-y-4">
             {messages.map((message) => (
@@ -447,7 +449,7 @@ const Chatbot = () => {
                       <Bot className="h-4 w-4 text-white" />
                     )}
                   </div>
-                  <div className={`px-4 py-2 rounded-2xl ${message.isUser ? 'bg-blue-500 text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white'}`}>
+                  <div className={`px-4 py-2 rounded-2xl ${message.isUser ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-button' : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white shadow-card'}`}>
                     <p className="text-sm whitespace-pre-wrap">{message.text}</p>
                     {message.hasLinks && message.links && !message.isUser && (
                       <div className="mt-2">
@@ -458,7 +460,6 @@ const Chatbot = () => {
                 </div>
               </motion.div>
             ))}
-            
             {isLoading && (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -477,39 +478,37 @@ const Chatbot = () => {
             )}
             <div ref={messagesEndRef} />
           </div>
-
           {/* Input Form */}
-          <div className="border-t border-gray-200 dark:border-gray-700 p-4">
+          <div className="border-t border-border p-4 bg-white/80 dark:bg-gray-800/80 rounded-b-3xl">
             <form onSubmit={handleSubmit} className="flex space-x-2">
               <input
                 type="text"
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
                 placeholder="Type your message..."
-                className="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                className="flex-1 px-4 py-2 border-2 border-border rounded-full focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-white text-lg shadow-inner transition-smooth"
                 disabled={isLoading}
               />
               <button
                 type="submit"
                 disabled={isLoading || !inputText.trim()}
-                className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold text-lg shadow-button hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-bounce"
               >
-                <Send className="h-4 w-4" />
+                <Send className="h-5 w-5" />
               </button>
             </form>
           </div>
         </div>
-
         {/* Disclaimer */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-700 rounded-lg"
+          className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-200 dark:border-yellow-700 rounded-lg shadow-soft"
         >
           <p className="text-sm text-yellow-800 dark:text-yellow-200">
             <strong>Important:</strong> This chatbot provides general information and support, 
-            but it's not a substitute for professional mental health care. If you\'re experiencing 
+            but it's not a substitute for professional mental health care. If you're experiencing 
             a crisis or need immediate help, please contact a mental health professional or 
             emergency services.
           </p>

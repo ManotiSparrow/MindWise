@@ -9,6 +9,9 @@ import Articles from './pages/Articles';
 import CrisisHelp from './pages/CrisisHelp';
 import About from './pages/About';
 import Search from './pages/Search';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
+import Journal from './pages/Journal';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { SearchProvider } from './contexts/SearchContext';
 
@@ -28,6 +31,9 @@ function App() {
                 <Route path="/crisis" element={<CrisisHelp />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/search" element={<Search />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<SignUp />} />
+                <Route path="/journal" element={<Journal />} />
               </Routes>
             </AnimatePresence>
           </div>
