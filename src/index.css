@@ -195,3 +195,12 @@ All colors MUST be HSL. Calming, trustworthy, professional yet approachable.
     transition: var(--transition-bounce);
   }
 }
+
+.animate-bounce-once {
+  animation: bounce 0.5s;
+}
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  30% { transform: scale(1.15); }
+  60% { transform: scale(0.95); }
+}
