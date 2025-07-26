@@ -11,6 +11,9 @@
 * 🔍 **Live Search Experience**
   Autocomplete-enabled search bar that dynamically routes to a `/search` results page.
 
+*📓 **AI-Prompted Journal**
+Reflective journaling tool with randomized prompts and instant AI-powered sentiment feedback, securely stored locally under /journal.
+
 * 💬 **AI Chatbot Interface**
   Simulated chatbot interface (placeholder for AI/LLM integration).
 
@@ -53,7 +56,9 @@
 | `/articles`  | Articles and blogs                   |
 | `/crisis`    | Crisis help page                     |
 | `/about`     | About MindWise                       |
+| `/journal    | Journal                              |
 | `/search`    | Search results (based on user input) |
+
 
 ---
 
