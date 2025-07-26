@@ -1,7 +1,3 @@
-Here’s the updated and refined `README.md` that includes the **📓 AI-Prompted Journal** feature and adjusts relevant sections accordingly:
-
----
-
 # 🧠 MindWise – Mental Health Companion App
 
 **MindWise** is a modern mental wellness web app offering educational resources, chatbot support, AI journaling, real-time search, and emotional check-ins. Built using **React + TypeScript**, the app emphasizes clean UI, responsive design, and personalized experiences through themes and local journaling.
