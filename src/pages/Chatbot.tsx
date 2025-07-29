@@ -76,6 +76,24 @@ const Chatbot = () => {
         { text: "Find Anxiety Treatment", url: "https://www.psychologytoday.com/us/therapists", type: "article" }
       ]
     },
+
+    'anxious': {
+      text: "Feeling anxious is a normal response to stress, but when it becomes overwhelming, it can be debilitating. Remember that you have the strength to manage your anxiety. Here are some helpful resources:",
+      links: [
+        { text: "Grounding Techniques for Anxiety", url: "https://www.youtube.com/watch?v=5X2d9a1b3j0", type: "video" },
+        { text: "Coping with Anxiety", url: "https://adaa.org/understanding-anxiety/coping", type: "article" }
+      ]
+    },
+
+    'panic': {
+      text: "Panic attacks can be terrifying, but they are not dangerous. They often involve sudden feelings of intense fear or discomfort. It's important to remember that you can manage these feelings. Here are some helpful resources:",
+      links: [
+        { text: "Panic Attack Symptoms and Treatment", url: "https://www.nimh.nih.gov/health/topics/panic-disorder", type: "article" },
+        { text: "Grounding Techniques for Panic Attacks", url: "https://www.youtube.com/watch?v=5X2d9a1b3j0", type: "video" },
+        { text: "Coping with Panic Attacks", url: "https://adaa.org/understanding-anxiety/panic-disorder-agoraphobia/coping-panic-attacks", type: "article" }
+      ]
+    },
+
     'panic attack': {
       text: "Panic attacks are intense but not dangerous. Try the 5-4-3-2-1 grounding technique: name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. Focus on slow, deep breathing. You will get through this. 🌸",
       links: [
@@ -91,6 +109,15 @@ const Chatbot = () => {
         { text: "Worry Management Techniques", url: "https://www.apa.org/topics/stress/manage", type: "article" }
       ]
     },
+
+    'worry': {
+      text: "Worrying is a common response to uncertainty, but it can become overwhelming. It's important to recognize when worry is taking over your life. Here are some resources to help you manage worry:",
+      links: [
+        { text: "Understanding Worry and Anxiety", url: "https://adaa.org/understanding-anxiety/worry", type: "article" },
+        { text: "Coping with Worry", url: "https://www.youtube.com/watch?v=k5RH3BdXDOY", type: "video" }
+      ]
+    },
+
     'social anxiety': {
       text: "Social anxiety is very common and treatable. It's the fear of being judged by others, but remember - most people are focused on themselves, not judging you. You deserve to feel comfortable in social situations.",
       links: [
@@ -179,6 +206,21 @@ const Chatbot = () => {
         { text: "Understanding Antidepressants", url: "https://www.youtube.com/watch?v=OmK8lDNvvS0", type: "video" }
       ]
     },
+
+  'medicine': {
+      text: "Mental health medications can be very effective when used appropriately. They work best when combined with therapy and lifestyle changes. Any medication decisions should always be made with a qualified healthcare provider. 💊",
+      links: [
+        { text: "Mental Health Medications", url: "https://www.nimh.nih.gov/health/topics/mental-health-medications", type: "article" },
+        { text: "Understanding Antidepressants", url: "https://www.youtube.com/watch?v=OmK8lDNvvS0", type: "video" }
+      ]
+    },
+    'doctor': {
+      text: "If you're considering medication or have concerns about your mental health, it's important to consult with a qualified healthcare provider. They can help you understand your options and find the best treatment plan for you. Remember, you are not alone in this journey. 🩺",
+      links: [
+        { text: "Finding a Mental Health Professional", url: "https://www.psychologytoday.com/us/therapists", type: "article" },
+        { text: "Questions to Ask Your Doctor", url: "https://www.nami.org/Your-Journey/Individuals-with-Mental-Illness/Getting-Treatment/Questions-to-Ask-Your-Doctor", type: "article" }
+      ]
+    },
     'counseling': {
       text: "Counseling provides a supportive environment to work through challenges and develop coping strategies. It's a collaborative process where you and your counselor work together toward your goals. You deserve this support. 🌈",
       links: [
@@ -242,6 +284,34 @@ const Chatbot = () => {
       links: [
         { text: "Building Healthy Relationships", url: "https://www.youtube.com/watch?v=NhyfBi-Ad4c", type: "video" },
         { text: "Relationship Mental Health", url: "https://www.psychologytoday.com/us/basics/relationships", type: "article" }
+      ]
+    },
+    'broken heart': {
+      text: "A broken heart can feel unbearable, but it's a natural part of life. Healing takes time, and it's okay to grieve the loss of a relationship. Surround yourself with supportive friends and family, and allow yourself to feel your emotions. You will heal. 💔",
+      links: [
+        { text: "Healing from Heartbreak", url: "https://www.youtube.com/watch?v=1j8d9k2b3a4", type: "video" },
+        { text: "Coping with Heartbreak", url: "https://www.psychologytoday.com/us/blog/click-here-happiness/201802/how-heal-broken-heart", type: "article" }
+      ]
+    },
+    'relationship problems': {
+      text: "Every relationship has its challenges, and it's normal to face ups and downs. Open communication, empathy, and understanding are key to resolving conflicts. Remember, it's okay to seek help if you need it. You deserve healthy, fulfilling relationships. 💞",
+      links: [
+        { text: "Resolving Relationship Conflicts", url: "https://www.youtube.com/watch?v=1j8d9k2b3a4", type: "video" },
+        { text: "Healthy Relationship Tips", url: "https://www.psychologytoday.com/us/basics/relationships", type: "article" }
+      ]
+    },
+    'break-up': {
+      text: "Break-ups can be incredibly painful, but they also provide an opportunity for growth and self-discovery. Allow yourself to grieve the loss, but also remember that this is a chance to focus on yourself and what you truly want in life. Healing takes time, and you will come out stronger. 🌱",
+      links: [
+        { text: "Coping with Break-Ups", url: "https://www.youtube.com/watch?v=1j8d9k2b3a4", type: "video" },
+        { text: "Healing After a Break-Up", url: "https://www.psychologytoday.com/us/blog/click-here-happiness/201802/how-heal-broken-heart", type: "article" }
+      ]
+    },
+    'break up': {
+      text: "Break-ups can be incredibly painful, but they also provide an opportunity for growth and self-discovery. Allow yourself to grieve the loss, but also remember that this is a chance to focus on yourself and what you truly want in life. Healing takes time, and you will come out stronger. 🌱",
+      links: [
+        { text: "Coping with Break-Ups", url: "https://www.youtube.com/watch?v=1j8d9k2b3a4", type: "video" },
+        { text: "Healing After a Break-Up", url: "https://www.psychologytoday.com/us/blog/click-here-happiness/201802/how-heal-broken-heart", type: "article" }
       ]
     },
     'boundaries': {
