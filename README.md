@@ -1,62 +1,132 @@
-🧠 MindWise – Your AI Companion for Mental Wellness
+# 🧠 MindWise – Mental Health Companion App
 
-MindWise is an AI-powered mental wellness web app that offers compassionate support, mood tracking, affirmations, and journaling—blending technology with empathy.
+**MindWise** is a modern mental wellness web app offering educational resources, chatbot support, AI journaling, real-time search, and emotional check-ins. Built using **React + TypeScript**, the app emphasizes clean UI, responsive design, and personalized experiences through themes and local journaling.
 
-✨ Project Description
+🌐 [Live Demo](https://meek-sopapillas-653fbe.netlify.app/)
 
-A digital safe space powered by AI where users can reflect, express, and uplift their emotional well-being.
+---
 
-Mental health is often neglected due to stigma, inaccessibility, or lack of real-time support. MindWise bridges that gap by offering a non-judgmental AI companion that listens, encourages, and helps users track their emotional patterns.
+## ✨ Core Features
 
-🚀 Features
+* 🔍 **Live Search Experience**
+  Autocomplete-enabled search bar that dynamically routes to a `/search` results page.
 
-💬 AI Chatbot trained to engage with users empathetically
+* 💬 **AI Chatbot Interface**
+  A fully functional AI-powered chatbot located at /chatbot, capable of engaging users in mental health–oriented conversations, offering support, and simulating therapeutic dialogue.
 
-📈 Mood Tracker to log daily emotional states
+* 📚 **Educational Hub**
+  Centralized mental health knowledge base under `/education`.
 
-✨ Affirmations Module for positive reinforcement
+* 📰 **Articles Section**
+  Curated content for self-help, psychoeducation, and blog-style mental health articles.
 
-📓 Journaling Space for reflection and self-awareness
+* 🚨 **Crisis Help**
+  Emergency guidance and quick links for users in distress.
 
-🎨 Clean UI with mental wellness–friendly aesthetics
+* 📓 **AI-Prompted Journal**
+  Reflective journaling tool at `/journal` with randomized prompts, AI-powered sentiment feedback, and secure localStorage-based entry saving.
 
-🔗 Deployed on Netlify and Render for instant access
+* 🌗 **Theme Toggle**
+  Light/Dark mode toggle using React Context, with persistent theme state stored in `localStorage`.
 
-📸 Screenshots / Demo
+* 🧭 **Navigation & Routing**
+  SPA routing with animated transitions powered by `framer-motion`.
 
-Coming soon: Add GIFs or screenshots of the chatbot, mood tracker UI, and journal entry view
+---
 
-Live demo: 🌐 https://meek-sopapillas-653fbe.netlify.app/
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
+* **Framework**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+* **Language**: TypeScript
+* **Styling**: Tailwind CSS
+* **Routing**: React Router
+* **Animation**: Framer Motion
+* **Icons**: Lucide React
+* **State Management**: React Context API
+* **Storage**: Browser `localStorage` (for journal data)
 
-Frontend:
+---
 
-React (Vite)
+## 🧩 Pages & Routes
 
-TypeScript
+| Route        | Description                                   |
+| ------------ | --------------------------------------------- |
+| `/`          | Home page                                     |
+| `/education` | Mental health education hub                   |
+| `/chatbot`   | Chatbot support page                          |
+| `/articles`  | Articles and blogs                            |
+| `/crisis`    | Crisis help and emergency resources           |
+| `/about`     | About MindWise                                |
+| `/search`    | Live search results page                      |
+| `/journal`   | AI-generated journaling prompts & reflections |
 
-Tailwind CSS
+---
 
-Backend:
+## 📁 Project Structure (Key Files)
 
-Flask (Python)
+```
+project/
+│
+├── src/
+│   ├── components/
+│   │   └── Navbar.tsx           # Responsive navbar with theme + search
+│   ├── contexts/
+│   │   ├── ThemeContext.tsx     # Light/Dark theme toggle via Context API
+│   │   └── SearchContext.tsx    # Global search term/state context
+│   ├── pages/                   # Routes: Home, Journal, Chatbot, etc.
+│   ├── App.tsx                  # Main app router with transitions
+│   └── main.tsx                 # React DOM root
+├── public/
+├── index.html                   # Base HTML template
+├── vite.config.ts               # Vite build config
+├── tailwind.config.js           # Tailwind setup
+└── package.json                 # Project metadata and dependencies
+```
 
-REST API with AI logic
+---
 
-AI/ML:
+## 🚀 Getting Started
 
-HuggingFace Transformers (for natural language understanding)
+### 1. Clone the repository
 
-Custom emotional context handling
+```bash
+git clone https://github.com/ManotiSparrow/MindWise.git
+cd mindwise
+```
 
-Deployment:
+### 2. Install dependencies
 
-Frontend: Netlify
+```bash
+npm install
+```
 
-Backend: Render
+### 3. Run the app locally
 
-📦 Installation
+```bash
+npm run dev
+```
 
-Clone the repository
-https://github.com/ManotiSparrow/MindWise/tree/main
+Visit `http://localhost:5173` to start exploring the app in your browser.
+
+---
+
+## 🧪 Planned Enhancements
+
+* ✅ Integrate OpenAI or Sora API for real AI chatbot and journaling analysis.
+* ✅ Add Firebase or Supabase backend for user login + synced journaling.
+* ✅ Improve accessibility (voice input, screen reader support).
+* ✅ Expand journaling dashboard with mood trend analytics.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🙌 Acknowledgments
+
+Special thanks to all contributors in the AI + Mental Health space. MindWise is a creative educational prototype designed to support mental health awareness. It is not intended to replace professional psychological or psychiatric care.
+
+
